@@ -15,3 +15,12 @@ In this project, we explore K-Nearest Neighbors (KNN) from scratch to advanced c
 * **📐 numpy** – for performing numerical and statistical operations 
 
 ---
+
+## 📘 Project Overview
+
+**Project Title**: KNN Algorithm
+**Level**: Beginner to Advance  
+**Tool**: Jupyter Notebook  
+**Libraries Used**: `pandas`, `numpy`, `matplotlib`
+
+---
