@@ -36,3 +36,22 @@ In this project, we explore K-Nearest Neighbors (KNN) from scratch to advanced c
 7. **Advantages and Disadvantages**
 
 ---
+
+## 📘 Introduction to KNN
+
+## What is KNN?
+
+KNN stands for **K-Nearest Neighbors**. It is one of the algorithms under **supervised machine learning**.  
+
+👉 If you want more clarity about machine learning and supervised learning, check my [Linear Regression repository](https://github.com/harshavardhanBOMMALATA/Linear-Regression.git).  
+
+KNN can be used for both **regression** and **classification**, but it is mostly applied in **classification problems**.  
+
+The algorithm works based on the concept of **neighbors**.  
+
+**Example:**
+- A person with **black hair, light brown skin tone, and thick eyebrows** might be classified as **Indian**.  
+- A person with a **dark black skin tone** might be classified as **African**.  
+
+This is how KNN makes predictions — by looking at the closest neighbors and deciding based on similarity.  
+
