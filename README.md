@@ -55,3 +55,17 @@ The algorithm works based on the concept of **neighbors**.
 
 This is how KNN makes predictions — by looking at the closest neighbors and deciding based on similarity.  
 
+---
+
+## How KNN Works and Why It Works
+
+KNN works on the basis of **neighbors**.  
+
+1. It takes all the data points.  
+2. For a given input data point, it calculates how close it is to the other points using a **distance formula** (like Euclidean distance).  
+3. It then selects the **k nearest points**.  
+4. For **classification**, it performs a **majority vote** among those neighbors and assigns the class based on the highest votes.  
+5. For **regression**, instead of voting, it takes the **average** of the neighbors’ values.  
+
+👉 **Why does it work?**  
+Because the algorithm makes predictions by checking the closest neighbors. Data points that are close to each other usually share similar characteristics, so this method is both simple and effective.  
