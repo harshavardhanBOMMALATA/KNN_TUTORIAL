@@ -69,3 +69,76 @@ KNN works on the basis of **neighbors**.
 
 👉 **Why does it work?**  
 Because the algorithm makes predictions by checking the closest neighbors. Data points that are close to each other usually share similar characteristics, so this method is both simple and effective.  
+
+---
+
+## KNN Example (Step by Step)
+
+We will now understand KNN with a simple dataset.  
+
+### Dataset
+
+| Person | Height (cm) | Weight (kg) | Category |
+|--------|-------------|-------------|----------|
+| A      | 170         | 65          | Fit      |
+| B      | 160         | 60          | Fit      |
+| C      | 180         | 80          | Fit      |
+| D      | 155         | 72          | Unfit    |
+| E      | 165         | 85          | Unfit    |
+
+New data point:  Height = 167 cm
+                 Weight = 70 kg
+
+Our task: **Predict whether this person is Fit or Unfit using KNN.**
+
+---
+
+### Step 1: Distance Formula
+
+We use **Euclidean distance**:  
+
+\[
+d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+\]
+
+Where:  
+- \(x\) = Height  
+- \(y\) = Weight  
+
+---
+
+### Step 2: Calculate Distances
+
+- Distance(New, A) = √((167−170)² + (70−65)²) = √(9 + 25) = √34 ≈ **5.83**  
+- Distance(New, B) = √((167−160)² + (70−60)²) = √(49 + 100) = √149 ≈ **12.21**  
+- Distance(New, C) = √((167−180)² + (70−80)²) = √(169 + 100) = √269 ≈ **16.40**  
+- Distance(New, D) = √((167−155)² + (70−72)²) = √(144 + 4) = √148 ≈ **12.16**  
+- Distance(New, E) = √((167−165)² + (70−85)²) = √(4 + 225) = √229 ≈ **15.13**  
+
+---
+
+### Step 3: Select Nearest Neighbors
+
+Let’s take **k = 3** nearest neighbors:  
+- A → Fit (5.83)  
+- D → Unfit (12.16)  
+- B → Fit (12.21)  
+
+---
+
+### Step 4: Voting
+
+- Fit = 2 votes  
+- Unfit = 1 vote  
+
+👉 Majority = **Fit**
+
+---
+
+### Final Result
+
+The new person with **Height = 167 cm** and **Weight = 70 kg** is predicted as:  
+
+✅ **Fit**
+
+
