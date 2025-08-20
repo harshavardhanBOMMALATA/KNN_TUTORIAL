@@ -24,3 +24,15 @@ In this project, we explore K-Nearest Neighbors (KNN) from scratch to advanced c
 **Libraries Used**: `pandas`, `numpy`, `matplotlib`
 
 ---
+
+## 📁 File Structure 
+
+1. **Introduction to KNN**
+2. **Working and Why It Works**
+3. **Mathematical Intuition**
+4. **Implementation Without Scikit-Learn**
+5. **Implementation With Scikit-Learn**
+6. **Applications**
+7. **Advantages and Disadvantages**
+
+---
